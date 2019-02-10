@@ -9,3 +9,16 @@
     background-color: lighten( $dark-yellow, 2% ) ;
   }
 }
+
+.btc-button {
+  padding: 8px 28px;
+  color: black;
+  text-decoration: none;
+  background-color: $dark-yellow;
+  transition: background-color 0.15s ease;
+  &:hover {
+    background-color: #389168;
+    text-decoration: none;
+    color: white;
+  }
+}

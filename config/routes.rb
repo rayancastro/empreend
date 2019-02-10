@@ -1,5 +1,18 @@
 Rails.application.routes.draw do
-  devise_for :users
   root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # AUTHENTICATION
+
+  devise_for :users
+
+  # ADMIN
+
+  get "/admin", to: "pages#admin"
+
+  #BLOG
+
+  get "/post/:display_name", to: "posts#show", as: :post
+  get "/blog", to: "posts#index"
+  resources :posts, except: [:index, :show]
+
 end

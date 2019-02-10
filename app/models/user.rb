@@ -1,14 +1,9 @@
 class User < ApplicationRecord
-  before_save :set_ip
+  validates :first_name, presence: true
+  validates :last_name, presence: true
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
-  private
-
-  def set_ip
-    self.ip = request.remote_ip
-  end
 end
