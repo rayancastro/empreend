@@ -16,9 +16,10 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
+    @post.user = current_user
     if @post.save
       flash[:notice] = "O post foi criado com sucesso!"
-      redirect_to post_path(@post)
+      redirect_to "post/#{@post.display_url}"
     else
       flash[:alert] = "Erro na criação do post"
       render :new
@@ -31,7 +32,7 @@ class PostsController < ApplicationController
   def update
     if @post.update(post_params)
       flash[:notice] = "O post foi atualizado com sucesso!"
-      redirect_to post_path(@post)
+      redirect_to "post/#{@post.display_url}"
     else
       flash[:alert] = "Erro na edição do post"
       render :edit
@@ -54,7 +55,7 @@ class PostsController < ApplicationController
   end
 
   def set_post
-    @post = Post.find(params[:id])
+    @post = Post.find_by(display_url: params[:display_url])
   end
 
 end

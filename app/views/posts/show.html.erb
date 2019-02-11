@@ -1,1 +1,12 @@
-Show
+<div class="col-12 text-center">
+  <div class="post-head">
+
+      <h3><%= @post.title %></h3>
+      <h5><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+  </div>
+
+  <div class="post-body">
+    <%= raw(@post.body) %>
+  </div>
+      <%= link_to "Voltar", blog_path, class: "btn btn-primary"  %>
+</div>

@@ -41,6 +41,36 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: font-url('Montserrat-Regular.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
-$body-font: "Roboto", "Helvetica", "sans-serif";
-$headers-font: "Roboto", "Helvetica", "sans-serif";
+@font-face {
+  font-family: 'Montserrat';
+  src: font-url('Montserrat-Medium.TTF') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: font-url('Montserrat-Bold.TTF') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: font-url('ROBOTO-BLACK.TTF') format('truetype');
+  font-weight: black;
+  font-style: normal;
+}
+
+
+
+$body-font: 'Montserrat', 'sans-serif';
+
+$headers-font: 'Montserrat', 'sans-serif';

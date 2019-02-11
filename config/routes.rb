@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   root to: 'pages#home'
 
   # AUTHENTICATION
@@ -11,7 +12,7 @@ Rails.application.routes.draw do
 
   #BLOG
 
-  get "/post/:display_name", to: "posts#show", as: :post
+  get "/post/:display_url", to: "posts#show", as: :post
   get "/blog", to: "posts#index"
   resources :posts, except: [:index, :show]
 

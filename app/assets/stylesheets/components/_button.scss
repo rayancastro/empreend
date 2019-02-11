@@ -1,12 +1,12 @@
 .yellow-btn {
   padding: 8px 16px;
-  background-color: $dark-yellow ;
+  background-color: $emp-green ;
   transition: background 0.3s ease;
   font-size: 0.9em;
   font-weight: bold;
   text-align: center;
   &:hover {
-    background-color: lighten( $dark-yellow, 2% ) ;
+    background-color: lighten( $emp-green, 2% ) ;
   }
 }
 
@@ -14,7 +14,7 @@
   padding: 8px 28px;
   color: black;
   text-decoration: none;
-  background-color: $dark-yellow;
+  background-color: $emp-green;
   transition: background-color 0.15s ease;
   &:hover {
     background-color: #389168;
