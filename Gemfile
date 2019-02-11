@@ -20,7 +20,7 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
-gem 'ckeditor'
+gem 'ckeditor', github: 'galetahub/ckeditor'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

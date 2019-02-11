@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/galetahub/ckeditor.git
+  revision: 2def63b8be9bac701869d70a4f6600772b42de3d
+  specs:
+    ckeditor (4.3.0)
+      orm_adapter (~> 0.5.0)
+      terrapin
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -59,9 +67,6 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
-    ckeditor (4.3.0)
-      orm_adapter (~> 0.5.0)
-      terrapin
     climate_control (0.2.0)
     coderay (1.1.2)
     concurrent-ruby (1.1.4)
@@ -246,7 +251,7 @@ DEPENDENCIES
   bootsnap
   bootstrap
   carrierwave
-  ckeditor
+  ckeditor!
   devise
   dotenv-rails
   fog-aws

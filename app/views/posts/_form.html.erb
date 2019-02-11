@@ -22,9 +22,13 @@
     <%= f.input :display_url, class: "form-control" %>
   </div>
 
+  <%= f.input :primary_photo, label: "Foto do banner" %>
+  <%= f.input :primary_photo_cache, as: :hidden %>
+
   <div class="form-group">
     <%= f.input :body, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control" %>
   </div>
+
 
   <div class="form-group">
     <%= f.button :submit, class: 'btn-primary' %>
