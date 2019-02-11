@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-  skip_before_action :require_admin, except: [:index, :show]
+  skip_before_action :require_admin, only: [:index, :show]
   before_action :set_post, only: [:show, :edit, :update, :delete]
 
   def index
