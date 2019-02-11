@@ -1,2 +1,28 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <div class="banner-item">
+    <h1 class="banner-text"><span class="banner-dash-left"></span>Dê um end nos seus problemas!<span class="banner-dash-right"></span></h3>
+  </div>
+</div>
+
+
+    <div class="row">
+      <% @posts.each do |post| %>
+        <div class="col-12 col-sm-6 text-center">
+          <div class="post-card">
+            <div class="post-head">
+
+                <h3><%= post.title %></h3>
+                <h5><%= post.created_at.strftime('%b %d, %Y') %></h5>
+
+            </div>
+
+            <div class="post-body">
+              <%= raw(post.body).truncate(358) %>
+            </div>
+            <%= link_to "Leia Mais", "post/#{post.display_url}", class: "btn btn-primary" %>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+

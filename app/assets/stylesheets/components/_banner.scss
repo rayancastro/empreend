@@ -2,9 +2,9 @@
   color: white;
   text-align: center;
   width: 100vw;
-  height: 220px;
+  height: 420px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background: image-url('banner_home.png');
+  background: image-url('green-leaves-plant');
   background-size: cover !important;
   background-position: center center;
   display: flex;
@@ -34,16 +34,16 @@
   position: relative;
 }
 .banner-dash-left {
-  border-bottom: 3px solid $emp-blue;
+  border-bottom: 3px solid $emp-green;
   position: absolute;
   top: 50%;
-  left: -28px;
+  left: -68px;
   width: 60px;
 }
 .banner-dash-right {
-  border-bottom: 3px solid $emp-blue;
+  border-bottom: 3px solid $emp-green;
   position: absolute;
   top: 50%;
-  right: -28px;
+  right: -68px;
   width: 60px;
 }

@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   skip_before_action :require_admin, only: [:index, :show]
-  before_action :set_post, only: [:show, :edit, :update, :delete]
+  before_action :set_post, only: [:show, :edit]
 
   def index
     @posts = Post.all
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post.user = current_user
     if @post.save
       flash[:notice] = "O post foi criado com sucesso!"
-      redirect_to "post/#{@post.display_url}"
+      redirect_to "/post/#{@post.display_url}"
     else
       flash[:alert] = "Erro na criação do post"
       render :new
@@ -30,9 +30,10 @@ class PostsController < ApplicationController
   end
 
   def update
+    @post = Post.find(params[:id])
     if @post.update(post_params)
       flash[:notice] = "O post foi atualizado com sucesso!"
-      redirect_to "post/#{@post.display_url}"
+      redirect_to "/post/#{@post.display_url}"
     else
       flash[:alert] = "Erro na edição do post"
       render :edit
@@ -40,6 +41,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    @post = Post.find(params[:id])
     if @post.destroy
       flash[:notice] = "O post foi deletado com sucesso!"
     else
