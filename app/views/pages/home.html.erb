@@ -7,7 +7,7 @@
 
 <div class="container-fluid">
 
-  <div class="ebook-box">
+  <div id="ebook-box">
     <h2>Baixe seu e-book agora!</h2>
     <div class="form-box">
       <%= form_for(@lead) do |f| %>
@@ -49,7 +49,7 @@
           <%= f.hidden_field :ip, class: 'form-control', value: request.remote_ip %>
 
           <div class="col-12 col-md-6 col-md-offset-3  col-lg-2">
-            <%= f.submit class: 'btn btn-primary', value: "Baixar e-book" %>
+            <%= f.submit class: 'btn btn-info', value: "Baixar e-book" %>
           </div>
         </div>
       <% end %>
