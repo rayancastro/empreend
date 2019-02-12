@@ -1,28 +1,26 @@
 <div class="banner">
-  <div class="banner-item">
-    <h1 class="banner-text"><span class="banner-dash-left"></span>Dê um end nos seus problemas!<span class="banner-dash-right"></span></h3>
+  <div class="banner-text">
+    <h1>Dê um end nos seus problemas!</h1>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
   </div>
 </div>
 
+<div class="container-fluid">
+  <h2 class="second-header">Mais artigos</h2>
 
-    <div class="row">
-      <% @posts.each do |post| %>
-        <div class="col-12 col-sm-6 text-center">
+  <div class="row">
+    <% @posts.each do |post| %>
+      <div class="col-12 col-sm-6 text-center">
+        <%= link_to post_path(display_url: post.display_url) do %>
           <div class="post-card">
-            <div class="post-head">
-
-                <h3><%= post.title %></h3>
-                <h5><%= post.created_at.strftime('%b %d, %Y') %></h5>
-
+            <div class="card-image" style="background-image: url(<%= post.primary_photo.url %>) !important;"></div>
+            <div class="card-content">
+              <p class="post-author"><%= post.user.first_name %> | <%= post.created_at.strftime('%b %d, %Y') %></p>
+              <h3 class="post-title"><%= post.title %></h3>
             </div>
-
-            <div class="post-body">
-              <%= raw(post.body).truncate(358) %>
-            </div>
-            <%= link_to "Leia Mais", post_path(display_url: post.display_url), class: "btn btn-primary" %>
           </div>
-        </div>
-      <% end %>
-
-    </div>
-
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>

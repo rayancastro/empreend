@@ -1,13 +1,12 @@
 <div class="nav-wrapper" id="nav-wrapper">
   <div class="navbar" id="navbar">
     <%= link_to root_path, class: "nav-item-logo" do %>
-      <%= image_tag 'logo-cinza.png', class: "logo" %>
+      <%= image_tag 'Empreende1@2x.png', class: "logo" %>
     <% end %>
     <div class="nav-items d-none d-lg-flex ">
       <div class="nav-item-left">
       </div>
       <div class="nav-item-right">
-        <%= link_to "BLOG", blog_path, class: "nav-link" %>
         <% if user_signed_in? %>
           <%= link_to "PAINEL ADMIN", admin_path, class: "nav-link" if current_user.admin? %>
           <%= link_to "LOGOUT", destroy_user_session_path, class: "nav-link", method: :delete %>

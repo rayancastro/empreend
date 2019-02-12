@@ -14,7 +14,7 @@
   <div class="post-body">
     <%= raw(@post.body) %>
   </div>
-      <%= link_to "Voltar", blog_path, class: "btn btn-primary"  %>
+      <%= link_to "Voltar", root_path, class: "btn btn-primary"  %>
       <% if current_user && current_user.admin %>
         <div class="icons-div">
           <%= link_to edit_post_path(@post), class: "edit-icon" do %>

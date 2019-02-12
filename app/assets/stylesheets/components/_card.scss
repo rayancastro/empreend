@@ -1,6 +1,23 @@
 .post-card {
-
-  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(252, 252, 252);
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   margin: 20px;
-  padding: 16px;
+
+}
+
+
+.card-image {
+  background-size: cover;
+  background-position: center center;
+  flex: 0 0 240px;
+}
+
+.card-content {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
