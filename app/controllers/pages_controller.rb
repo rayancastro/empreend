@@ -4,6 +4,7 @@ class PagesController < ApplicationController
 
   def home
     @posts = Post.all
+    @lead = Lead.new
   end
 
   def admin

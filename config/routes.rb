@@ -17,4 +17,9 @@ Rails.application.routes.draw do
   resources :posts, except: [:index, :show]
   get "/blog", to: "posts#index"
 
+  # LEADS
+
+  resources :leads, only: [:index, :new, :create]
+  get 'download_pdf', to: "leads#download_pdf", as: "download_pdf"
+
 end

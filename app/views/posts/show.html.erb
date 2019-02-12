@@ -4,25 +4,20 @@
     <p><%= @post.created_at.strftime('%b %d, %Y') %> || <%= @post.user.first_name %></p>
   </div>
 </div>
-
-<div class="col-12 text-center">
-  <div class="post-head">
-
-
-  </div>
-
+<div class="container">
   <div class="post-body">
     <%= raw(@post.body) %>
   </div>
-      <%= link_to "Voltar", root_path, class: "btn btn-primary"  %>
-      <% if current_user && current_user.admin %>
-        <div class="icons-div">
-          <%= link_to edit_post_path(@post), class: "edit-icon" do %>
-          <i class="fas fa-edit"></i>
-        <% end %>
-        <%= link_to "/posts/#{@post.id}", method: :delete, class: "delete-icon", onclick: "if (!confirm('Are you sure?')) { return false }" do %>
-          <i class="fas fa-trash-alt"></i>
-        <% end %>
-        </div>
+
+  <%= link_to "Voltar para o blog", root_path  %>
+  <% if current_user && current_user.admin %>
+    <div class="icons-div">
+      <%= link_to edit_post_path(@post), class: "edit-icon" do %>
+        <i class="fas fa-edit"></i>
       <% end %>
+      <%= link_to "/posts/#{@post.id}", method: :delete, class: "delete-icon", onclick: "if (!confirm('Are you sure?')) { return false }" do %>
+        <i class="fas fa-trash-alt"></i>
+      <% end %>
+    </div>
+  <% end %>
 </div>
