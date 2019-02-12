@@ -1,5 +1,6 @@
 class LeadsController < ApplicationController
-
+  skip_before_action :authenticate_user!
+  skip_before_action :require_admin
   def index
     @leads = Lead.all
     respond_to do |format|

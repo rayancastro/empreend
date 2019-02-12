@@ -1,14 +1,17 @@
 <div class="banner">
   <div class="banner-text">
-    <h1>Dê um end nos seus problemas!</h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit </p>
+    <h1>Empreend: para todo end tem um novo start</h1>
+    <p>O portal para o novo empreendedor: dicas, curiosidades e tudo o que você precisa saber!</p>
   </div>
 </div>
 
 <div class="container-fluid">
 
   <div id="ebook-box" class="fixed-ebook">
-    <h2>Baixe seu e-book agora!</h2>
+    <div class="ebook-info text-center">
+      <h2>BAIXE AQUI o nosso ebook: "Decole como MEI em 2019"</h2>
+      <p>Gratuito até 15/02/19</p>
+    </div>
     <div class="form-box">
       <%= form_for(@lead) do |f| %>
         <div class="row">
@@ -43,13 +46,13 @@
           <div class="col-12 col-md-6 col-lg-2">
             <div class="form-group">
               <%= f.label :Tipo %>
-              <%= f.select :tipo, [["Pessoa Física", "B2C"], ["Pessoa Jurídica", "B2B"]] %>
+              <%= f.select :tipo, [["Quero Empreender", "B2C"], ["Sou Empreendedor", "B2B"]] %>
             </div>
           </div>
           <%= f.hidden_field :ip, class: 'form-control', value: request.remote_ip %>
 
           <div class="col-12 col-md-6 col-md-offset-3  col-lg-2">
-            <%= f.submit class: 'btn btn-info', value: "Baixar e-book" %>
+            <input type="submit" name="commit" value="Baixar e-book" class="btn btn-info" data-disable-with="Validando">
           </div>
         </div>
       <% end %>

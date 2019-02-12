@@ -2,8 +2,13 @@ class Lead < ApplicationRecord
   before_save :set_data_hora
   require 'csv'
 
+  validates :nome, presence: true
+  validates :sobrenome, presence: true
+  validates :email, presence: true, uniqueness: true, format: { with: Devise.email_regexp, message: "Email invalido" }
+  validates :ip, presence: true
+
   def self.to_csv
-    attributes = %w{email, nome, ip, tipo, data_hora}
+    attributes = %w{email nome ip tipo data_hora}
 
     CSV.generate(headers: true) do |csv|
       csv << attributes
