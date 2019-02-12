@@ -1,4 +1,4 @@
-<div class="banner-post" style="background-image: url(<%= @post.primary_photo.url %>) !important;">
+<div class="banner-post" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @post.primary_photo.url %>) !important;">
   <div class="banner-item">
     <h1 class="banner-text"><%= @post.title %></h1>
     <p><%= @post.created_at.strftime('%b %d, %Y') %> || <%= @post.user.first_name %></p>

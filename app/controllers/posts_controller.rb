@@ -1,13 +1,13 @@
 class PostsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
   skip_before_action :require_admin, only: [:index, :show]
-  before_action :set_post, only: [:show, :edit]
 
   def index
     @posts = Post.all
   end
 
   def show
+    @post = Post.find_by(display_url: params[:display_url])
   end
 
   def new
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post.user = current_user
     if @post.save
       flash[:notice] = "O post foi criado com sucesso!"
-      redirect_to "/post/#{@post.display_url}"
+      redirect_to post_path(display_url: @post.display_url)
     else
       flash[:alert] = "Erro na criação do post"
       render :new
@@ -34,7 +34,7 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     if @post.update(post_params)
       flash[:notice] = "O post foi atualizado com sucesso!"
-      redirect_to "/post/#{@post.display_url}"
+      redirect_to post_path(display_url: @post.display_url)
     else
       flash[:alert] = "Erro na edição do post"
       render :edit
@@ -55,10 +55,6 @@ class PostsController < ApplicationController
 
   def post_params
     params.require(:post).permit(:title, :body, :display_url, :user_id, :primary_photo)
-  end
-
-  def set_post
-    @post = Post.find_by(display_url: params[:display_url])
   end
 
 end
