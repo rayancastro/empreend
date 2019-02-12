@@ -1,0 +1,13 @@
+const fixEbookOnScroll = () => {
+  const ebookBox = document.querySelector('#ebook-box');
+  console.log('jelly')
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= (window.innerHeight)*0.7) {
+      ebookBox.classList.add('fixed-ebook');
+    } else {
+
+    }
+  });
+}
+
+fixEbookOnScroll();

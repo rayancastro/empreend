@@ -9,6 +9,55 @@
     <%= raw(@post.body) %>
   </div>
 
+  <div id="ebook-box">
+    <h2>Baixe seu e-book agora!</h2>
+    <div class="form-box">
+      <%= form_for(@lead) do |f| %>
+        <div class="row">
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="form-group row">
+              <%= f.label :nome, class: "col-lg-2 col-form-label" %>
+              <div class="col-sm-10">
+                <%= f.text_field :nome, class: 'form-control field' %>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="form-group row">
+              <%= f.label :sobrenome, class: "col-lg-3 col-form-label" %>
+              <div class="col-sm-9">
+                <%= f.text_field :sobrenome, class: 'form-control field' %>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="form-group row">
+              <%= f.label :email, class: "col-lg-2 col-form-label" %>
+              <div class="col-sm-10">
+                <%= f.text_field :email, class: 'form-control field' %>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="form-group">
+              <%= f.label :Tipo %>
+              <%= f.select :tipo, [["Pessoa Física", "B2C"], ["Pessoa Jurídica", "B2B"]] %>
+            </div>
+          </div>
+          <%= f.hidden_field :ip, class: 'form-control', value: request.remote_ip %>
+
+          <div class="col-12 col-md-6 col-md-offset-3  col-lg-2">
+            <%= f.submit class: 'btn btn-info', value: "Baixar e-book" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
   <%= link_to "Voltar para o blog", root_path  %>
   <% if current_user && current_user.admin %>
     <div class="icons-div">
@@ -21,3 +70,9 @@
     </div>
   <% end %>
 </div>
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    <%= render(:partial => 'shared/ebook', :handlers => [:erb], :formats => [:js]) %>
+  <% end %>
+<% end %>

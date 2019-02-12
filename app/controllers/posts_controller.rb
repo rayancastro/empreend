@@ -8,6 +8,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(display_url: params[:display_url])
+    @lead = Lead.new
   end
 
   def new
