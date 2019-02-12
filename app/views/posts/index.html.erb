@@ -14,7 +14,7 @@
           <div class="post-body">
             <%= raw(post.body).truncate(358) %>
           </div>
-          <%= link_to "Leia Mais", "post/#{post.display_url}", class: "btn btn-primary" %>
+          <%= link_to "Leia Mais", post_path(display_url: post.display_url), class: "btn btn-primary" %>
         </div>
       <% end %>
 

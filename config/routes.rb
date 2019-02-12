@@ -12,7 +12,7 @@ Rails.application.routes.draw do
 
   #BLOG
 
-  get "/posts/:display_url", to: "posts#show", as: :post
+  get "/blog/:display_url", to: "posts#show", as: :post
   resources :posts, except: [:index, :show]
   get "/blog", to: "posts#index"
 
