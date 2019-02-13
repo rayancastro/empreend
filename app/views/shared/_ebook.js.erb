@@ -1,8 +1,15 @@
 const fixEbookOnScroll = () => {
+  const footer = document.querySelector('#footer');
   const ebookBox = document.querySelector('#ebook-box');
   window.addEventListener('scroll', () => {
     if (window.scrollY >= (window.innerHeight)*0.7) {
       ebookBox.classList.add('fixed-ebook');
+      var wrapper = document.querySelector('#ebook-wrapper')
+      if (!wrapper) {
+
+        footer.insertAdjacentHTML("afterend", `<div id="ebook-wrapper"></div>`);
+        window.scrollBy(0, -144);
+      }
     } else {
 
     }
