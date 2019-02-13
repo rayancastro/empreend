@@ -16,11 +16,6 @@
   }
 }
 
-#ebook-wrapper {
-  background-color: white;
-  height: 144px;
-}
-
 .form-box {
   display: flex;
   justify-content: center;
@@ -36,4 +31,9 @@
     z-index: 500;
     background-color: $emp-blue;
   }
+
+  #ebook-wrapper {
+  background-color: white;
+  height: 144px;
+}
 }
