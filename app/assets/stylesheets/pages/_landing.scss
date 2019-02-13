@@ -22,7 +22,18 @@
   align-items: center;
 }
 
+#ebook-wrapper {
+  height: 0px;
+}
+
 @media screen and (min-width: 700px) {
+
+  #ebook-wrapper {
+    background-color: white;
+    height: 144px !important;
+  }
+
+
   .fixed-ebook {
     position: fixed;
     bottom: 0;
@@ -31,9 +42,4 @@
     z-index: 500;
     background-color: $emp-blue;
   }
-
-  #ebook-wrapper {
-  background-color: white;
-  height: 144px;
-}
 }
