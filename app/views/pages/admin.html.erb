@@ -1,5 +1,17 @@
 <div class="container text-center">
   <h1>Painel Admin</h1>
+    <h2>CONTAGEM DE LEADS!</h2>
+    <h3><%= @progress %>/1000 leads!</h3>
+    <div class="progress-bar">
+      <div class="row">
+        <% 12.times do |i| %>
+          <div class="col-1 fraction <%= "fill" if @progress >= i*83.3 %>"></div>
+        <% end %>
+
+      </div>
+    </div>
+
+
   <%= link_to "Criar Post", new_post_path, class: "btn btn-primary" %>
   <%= link_to "Relatorio de Leads em CSV", leads_path(format: "csv"), class: "btn btn-info" %>
   <%= link_to "Relatorio de Leads em Excel", leads_path(format: "xls"), class: "btn btn-success" %>

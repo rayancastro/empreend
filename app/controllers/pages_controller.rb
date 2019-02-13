@@ -8,6 +8,7 @@ class PagesController < ApplicationController
   end
 
   def admin
+    @progress = Lead.count
   end
 
 end
