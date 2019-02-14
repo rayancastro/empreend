@@ -67,6 +67,7 @@ GEM
       activemodel (>= 4.0.0)
       activesupport (>= 4.0.0)
       mime-types (>= 1.16)
+    chartkick (3.0.2)
     climate_control (0.2.0)
     coderay (1.1.2)
     coffee-rails (4.2.2)
@@ -113,6 +114,8 @@ GEM
     formatador (0.2.5)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    groupdate (4.1.1)
+      activesupport (>= 4.2)
     i18n (1.5.3)
       concurrent-ruby (~> 1.0)
     ipaddress (0.8.3)
@@ -260,11 +263,13 @@ DEPENDENCIES
   bootsnap
   bootstrap
   carrierwave
+  chartkick
   ckeditor!
   devise
   dotenv-rails
   fog-aws
   font-awesome-sass
+  groupdate
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)

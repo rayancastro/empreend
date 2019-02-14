@@ -29,9 +29,9 @@
     <!-- End Google Tag Manager (noscript) -->
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
+    <%= javascript_include_tag 'application' %>
     <%= yield %>
     <%= render 'shared/footer' %>
-    <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
     <%= yield(:after_js) %>
   </body>
