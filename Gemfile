@@ -21,6 +21,7 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
 gem 'ckeditor', github: 'galetahub/ckeditor'
+gem 'social-share-button'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

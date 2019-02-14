@@ -3,10 +3,10 @@
   </button>
 
 <div class="modal fade" id="ebook-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">BAIXE AQUI o nosso ebook: "Decole como MEI em 2019"</h5>
+        <h5 class="modal-title text-center mod-title" id="exampleModalLabel">Baixe o ebook: "Decole como MEI em 2019"</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -14,8 +14,14 @@
       <div class="modal-body">
 
         <!-- FORMULARIO -->
-        <%= form_for(@lead) do |f| %>
-            <div class="col-12 col-md-6 offset-md-3">
+        <div class="row">
+          <div class="col-12 col-md-6 text-center">
+            <%= image_tag 'book.png', class: "modal-image" %>
+            <h3 class="modal-subtitle">Confira nosso eBook e fique por dentro do MEI em 2019</h3>
+            <h4 class="modal-free">Gratuito até 15/02/19</h4>
+          </div>
+          <div class="col-12 col-md-6">
+            <%= form_for(@lead) do |f| %>
 
               <div class="form-group">
                 <%= f.label :nome %>
@@ -43,11 +49,11 @@
                 </select>
               </div>
 
-            <%= f.hidden_field :ip, class: 'form-control', value: request.remote_ip %>
+              <%= f.hidden_field :ip, class: 'form-control', value: request.remote_ip %>
                           <input type="submit" name="commit" value="Baixar e-book" class="btn btn-block btn-success" data-disable-with="Validando" data-dismiss="modal">
-            </div>
-
-        <% end %>
+            <% end %>
+          </div>
+        </div>
       </div>
 
     </div>

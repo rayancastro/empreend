@@ -7,6 +7,7 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "bootstrap";
+@import "social-share-button";
 
 // Your CSS partials
 @import "layouts/index";
@@ -21,4 +22,15 @@ a {
 html, body {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+$size: 24px;
+
+.social-share-button {
+  .ssb-icon {
+    background-size: $size $size;
+    height: $size;
+    width: $size;
+    margin: 0 8px;
+  }
 }
