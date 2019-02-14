@@ -1,6 +1,7 @@
 <div class="banner-post" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= @post.primary_photo.url %>) !important;">
   <div class="banner-item">
     <h1 class="post-banner-text"><%= @post.title %></h1>
+    <p class="post-banner-share"> Para compartilhar: </p>
     <p><%= social_share_button_tag(@post.title) %> </p>
     <p><%= @post.created_at.strftime('%b %d, %Y') %> || <%= @post.user.first_name %></p>
   </div>
