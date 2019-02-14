@@ -1,0 +1,55 @@
+  <button type="button" id="modal-button" class="btn btn-primary d-none" data-toggle="modal" data-target="#ebook-modal">
+  Baixar e-book
+  </button>
+
+<div class="modal fade" id="ebook-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-center" id="exampleModalLabel">BAIXE AQUI o nosso ebook: "Decole como MEI em 2019"</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <!-- FORMULARIO -->
+        <%= form_for(@lead) do |f| %>
+            <div class="col-12 col-md-6 offset-md-3">
+
+              <div class="form-group">
+                <%= f.label :nome %>
+                <%= f.text_field :nome, class: 'form-control', placeholder: 'Elon' %>
+              </div>
+
+
+              <div class="form-group">
+                <%= f.label :sobrenome %>
+                <%= f.text_field :sobrenome, class: 'form-control', placeholder: 'Musk' %>
+              </div>
+
+              <div class="form-group">
+                <%= f.label :email %>
+                <%= f.text_field :email, class: 'form-control', placeholder: 'elon@tesla.com' %>
+              </div>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <%= f.label :Tipo, class: "input-group-text" %>
+                </div>
+                <select name="lead[tipo]" id="lead_tipo" class="custom-select">
+                  <option value="B2C">Quero Empreender</option>
+                  <option value="B2B">Sou Empreendedor</option>
+                </select>
+              </div>
+
+            <%= f.hidden_field :ip, class: 'form-control', value: request.remote_ip %>
+                          <input type="submit" name="commit" value="Baixar e-book" class="btn btn-block btn-success" data-disable-with="Validando" data-dismiss="modal">
+            </div>
+
+        <% end %>
+      </div>
+
+    </div>
+  </div>
+</div>

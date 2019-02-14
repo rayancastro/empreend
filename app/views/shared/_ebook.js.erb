@@ -16,4 +16,13 @@ const fixEbookOnScroll = () => {
   });
 }
 
+const openModal = () => {
+  const modalButton = document.querySelector('#modal-button');
+  modalButton.click();
+}
+
 fixEbookOnScroll();
+
+
+setTimeout(openModal, 5000);
+

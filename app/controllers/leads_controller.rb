@@ -16,6 +16,7 @@ class LeadsController < ApplicationController
       flash[:notice] = "Parabéns! Seu e-book será baixado em alguns instantes"
       redirect_to download_pdf_path
     else
+      raise
       flash[:alert] = "Dados inválidos. Por favor tente novamente"
       redirect_to root_path
     end
