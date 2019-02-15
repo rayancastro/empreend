@@ -26,7 +26,7 @@ class Lead < ApplicationRecord
   private
 
   def set_data_hora
-    self.data_hora = Time.now.strftime("%Y-%m-%d %H:%M:%S")
+    self.data_hora = Time.current.in_time_zone.strftime("%Y-%m-%d %H:%M:%S")
   end
 
 
