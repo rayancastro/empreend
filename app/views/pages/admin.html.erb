@@ -4,11 +4,15 @@
   <h3><%= @progress %>/1000 leads!</h3>
   <div class="progress-bar">
     <div class="row">
-      <% 12.times do |i| %>
-        <div class="col-1 fraction <%= "fill" if @progress >= i*83.3 %>">
+      <div class="col-12">
+        <div class="bar">
+          <% 100.times do |i| %>
+            <div class="fraction <%= "fill" if @progress >= (i+1)*10 %>">
 
+            </div>
+          <% end %>
         </div>
-      <% end %>
+      </div>
     </div>
 
   </div>
