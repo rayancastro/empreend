@@ -8,42 +8,36 @@
         <div class="row">
 
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="form-group row">
-              <%= f.label :nome, class: "col-lg-2 col-form-label" %>
-              <div class="col-sm-10">
-                <%= f.text_field :nome, class: 'form-control field' %>
-              </div>
+            <div class="form-group">
+                <%= f.text_field :nome, class: 'form-control field', placeholder: 'Nome' %>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-3">
-            <div class="form-group row">
-              <%= f.label :sobrenome, class: "col-lg-3 col-form-label" %>
-              <div class="col-sm-9">
-                <%= f.text_field :sobrenome, class: 'form-control field' %>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-2">
-            <div class="form-group row">
-              <%= f.label :email, class: "col-lg-2 col-form-label" %>
-              <div class="col-sm-10">
-                <%= f.text_field :email, class: 'form-control field' %>
-              </div>
+            <div class="form-group">
+                <%= f.text_field :sobrenome, class: 'form-control field', placeholder: 'Sobrenome' %>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-lg-2">
             <div class="form-group">
-              <%= f.label :Tipo %>
-              <%= f.select :tipo, [["Quero Empreender", "B2C"], ["Sou Empreendedor", "B2B"]] %>
+
+                <%= f.text_field :email, class: 'form-control field', placeholder: 'Email' %>
             </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+              <div class="input-group mb-3">
+                <select name="lead[tipo]" id="lead_tipo" class="custom-select">
+                  <option value="B2C">Quero Empreender</option>
+                  <option value="B2B">Sou Empreendedor</option>
+                </select>
+              </div>
           </div>
           <%= f.hidden_field :ip, class: 'form-control', value: request.remote_ip %>
 
           <div class="col-12 col-md-6 col-md-offset-3  col-lg-2">
-            <input type="submit" name="commit" value="Baixar e-book" class="btn btn-info" data-dismiss="modal" data-disable-with="Validando">
+            <input type="submit" name="commit" value="Baixar e-book" class="btn btn-secondary" data-dismiss="modal" data-disable-with="Validando">
           </div>
         </div>
       <% end %>

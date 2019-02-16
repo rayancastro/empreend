@@ -2,12 +2,14 @@
   <div class="banner-text">
     <h1>Empreend: para todo end tem um novo start</h1>
     <p>O portal para o novo empreendedor: dicas, curiosidades e tudo o que você precisa saber!</p>
+    <a href="/#post-index" class="btn banner-button">Leia Mais!</a>
   </div>
 </div>
+<%= render 'shared/ebox' %>
 
 <div class="container-fluid">
 
-  <h2 class="second-header">Mais artigos</h2>
+  <h2 class="second-header" id="post-index">Mais artigos</h2>
 
   <div class="row">
     <% @posts.each do |post| %>
@@ -25,7 +27,7 @@
     <% end %>
   </div>
 
-  <%= render 'shared/ebox' %>
+  
 
 </div>
 

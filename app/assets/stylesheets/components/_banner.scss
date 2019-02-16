@@ -4,7 +4,7 @@
   width: 100vw;
   height: 420px;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
-  background: image-url('Hero-post.png');
+  background: image-url('Frame.png');
   background-size: cover !important;
   background-position: center center;
   display: flex;
@@ -92,6 +92,28 @@
 .post-banner-share {
   margin: 10px !important;
 }
+
+.banner-button {
+  background-color: $emp-blue;
+  padding: 8px 60px;
+  margin: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+
+}
+  .banner-button:hover {
+    color: gray;
+    text-decoration: none;
+    background-color: lighten($emp-blue, 3%);
+  }
+
+  a:hover {
+    color: gray;
+    text-decoration: none;
+    background-color: lighten($emp-blue, 3%);
+  }
 
 @media (max-width: 600px) {
   .banner-text {
