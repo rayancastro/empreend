@@ -10,12 +10,17 @@ Rails.application.routes.draw do
 
   get "/admin", to: "pages#admin"
 
-  #BLOG
+  # EVENT
+
+  get "/meetup", to: "pages#meetup"
+  
+  # BLOG
 
   get "/blog/:display_url", to: "posts#show", as: :post
   patch "/blog/:id", to: "posts#update"
   resources :posts, except: [:index, :show]
   get "/blog", to: "posts#index"
+
 
   # LEADS
 
