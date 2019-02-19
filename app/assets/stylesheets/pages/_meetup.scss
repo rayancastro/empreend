@@ -1,6 +1,12 @@
+.container-fluid {
+  padding: 0;
+}
+
+// Banner
+
 .event-main-banner {
 	height: 600px;
-	background-image: url('Banner Hero.png');
+	background-image: url('banner_hero.png');
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -13,23 +19,127 @@
 	}
 }
 
+.event-banner-content {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
 
 .event-banner-button {
-  width: 227px;
-  height: 65px;
+  display: block;
   font-family: Museo Sans;
   font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #ffffff;
   background-color: #a3c123;
   padding: 20px 20px;
+  font-weight: 900;
 
   &:hover {
-
+    color: rgb(240, 240, 240);
   }
 
+}
+
+// Evento
+
+#evento {
+  display: flex;
+  padding: 50px 0px;
+  justify-content: flex-start;
+}
+
+.evento-imagem {
+  align-self: center;
+  margin: 0px 0;
+}
+
+.evento-content {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 62px;
+  font-family: Mukta;
+  font-size: 18px;
+  color: #5c5963;
+}
+
+
+.ong-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.ong-logo {
+  max-width: 100px;
+  max-height: 100px;
+  justify-self: flex-end;
+  margin: 40px;
+}
+// Foco
+
+#foco {
+  background-color: #5c5963;
+  padding: 85px 40px;
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #ffffff;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  h4 {
+    margin: 16px 0;
+    color: white;
+    font-weight: bold;
+  }
+  p {
+    max-width: 250px;
+    color: white;
+    text-align: center;
+  }
+}
+
+// Convidados
+
+#convidados {
+  background-image: url('banner_hero.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 85px 40px;
+}
+
+.img-convidados {
+  width: 250px;
+  height: 250px;
+  background-image: url('convidado1.png');
+}
+
+.img-content {
+  background-color: rgba(50, 50, 50, 0.3);
+}
+
+@media (max-width: 900px) {
+  #evento {
+    flex-direction: column;
+    min-width: 350px;
+  }
+
+  .evento-imagem {
+    align-self: center;
+    margin: 20px 0;
+  }
 }

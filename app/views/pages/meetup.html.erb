@@ -3,22 +3,22 @@
 	<!-- Banner -->
 	<div class="event-main-banner">
 		<div class="event-banner-content">
-			<%= image_tag 'Logo Evento cinza.png' %>
+			<%= image_tag 'logo_evento_cinza.png' %>
 			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-			<a href="" class="event-banner-button">Fazer inscrição</a>
+			<%= link_to "Fazer inscrição", root_path, class: 'event-banner-button' %>
 		</div>
 	</div>
 
 	<!-- Evento -->
 
 	<div id="evento">
-		<img src="" alt="">
-		<div class="evento-text">
+		<%= image_tag 'o_evento.png', class: 'evento-imagem' %>
+		<div class="evento-content">
 			<h2>O evento</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur impedit ducimus, quia corporis quo enim blanditiis, quis mollitia tenetur neque obcaecati culpa unde omnis ullam praesentium dolorum expedita aut numquam.</p>
 			<div class="ong-text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, alias, laudantium! Facere perspiciatis atque beatae. </p>
-				<img src="" alt="">
+				<%= image_tag 'teto.png', class: 'ong-logo'%>
 			</div>
 		</div>
 	</div>
@@ -26,34 +26,34 @@
 	<!-- Foco -->
 
 	<div id="foco">
-		<h2>Focamos em</h2>
+		<h2 class="text-center">Focamos em:</h2>
 		<div class="row">
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="features">
-					<img src="" alt="">
-					<h4></h4>
-					<p></p>
+					<%= image_tag 'empreendedores.png' %>
+					<h4>Empreendedores</h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque minus nam, odio. Quas laboriosoluptatem assumenda. </p>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="features">
-					<img src="" alt="">
-					<h4></h4>
-					<p></p>
+					<%= image_tag 'beginner.png' %>
+					<h4>Empreendedores beginner</h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea alias ipsum, porro. Reiciendis, facilis!</p>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="features">
-					<img src="" alt="">
-					<h4></h4>
-					<p></p>
+					<%= image_tag 'quer_empreender.png' %>
+					<h4>Quem quer empreender</h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus atque beatae quisquam distinctrerum laboriosam. </p>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="features">
-					<img src="" alt="">
-					<h4></h4>
-					<p></p>
+					<%= image_tag 'networking.png' %>
+					<h4>Quem busca networking</h4>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, sit. Odit fugiat sapiente atque naibus ducimus temporibus. </p>
 				</div>
 			</div>
 		</div>
