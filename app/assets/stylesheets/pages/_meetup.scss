@@ -1,0 +1,35 @@
+.event-main-banner {
+	height: 600px;
+	background-image: url('Banner Hero.png');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 40px 0px 0px 120px;
+
+	h3 {
+		max-width: 300px;
+	}
+}
+
+
+.event-banner-button {
+  width: 227px;
+  height: 65px;
+  font-family: Museo Sans;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  background-color: #a3c123;
+  padding: 20px 20px;
+
+  &:hover {
+
+  }
+
+}
