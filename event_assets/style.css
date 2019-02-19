@@ -1,0 +1,180 @@
+/*----------------------------------BOTOES----------------------------------*/
+.botao-inscricao {
+    width: 227px;
+    height: 65px;
+    font-family: MuseoSans-700;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+    width: 227px;
+    height: 65px;
+    background-color: #a3c123;
+  }
+
+
+/*----------------------------------TEXTOS----------------------------------*/
+
+@font-face {
+    font-family: MuseoSans-700;
+    src: url('MuseoSans-700.otf');
+}
+
+@font-face {
+    font-family: Mukta;
+    src: url('Mukta-Regular.ttf');
+}
+
+h3 {
+    font-family: MuseoSans-700;
+    font-size: 34px;
+}
+
+h4 {
+    font-family: Mukta;
+    font-size: 24px;
+}
+
+p {
+    font-family: Mukta;
+    font-size: 18px;
+}
+
+.fonte-cinza{
+    color: #5c5963;
+}
+
+.fonte-branca{
+    color: white;
+}
+
+/*----------------------------------BACKGROUNDS----------------------------------*/ 
+.bg-cinza{
+    background-color: #5c5963;
+}
+
+.bg-verde{
+    background-color: #cce65d;
+    min-height: 320px;
+}
+
+.bg-offwhite{
+    background-color: #f9f9f9;
+}
+
+.bg-hero{
+    background-image: url('/event_assets/img/Banner_hero.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 600px;
+}
+
+.bg-incricao{
+    background-image: url('/event_assets/img/bg_inscricao.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 490px;
+}
+
+.bg-parceiros{
+    background-image: url('/event_assets/img/bg_inscricao.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 490px;
+}
+
+
+/*----------------------------------RODAPÉ----------------------------------*/ 
+
+
+footer{
+    background: #5c5963;
+    width: 100%;
+    height: 220px;
+    position: -ms-page;
+    bottom: 0;
+    left: 0;
+    }
+
+
+
+/*----------------------------------HOVER CONTATOS----------------------------------*/ 
+
+
+.hover {
+    position:relative;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    float:left;
+    margin-right:20px
+}
+.hover figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+    margin-left:-50px
+}
+.hover figure img {
+    display:block;
+    position:relative;
+    z-index:10;
+    margin:-15px 0
+}
+.hover figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.hover figure h4 {
+    font-family: MuseoSans-700;
+    font-size:20px;
+    text-align:center;
+}
+.hover figure p {
+    display:block;
+    font-family: MuseoSans-700;
+    font-size:14px;
+    line-height:18px;
+    margin:0;
+    text-align:center;
+}
+.hover figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    background-color: #eee96b;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.hover figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.hover figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.hover figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
