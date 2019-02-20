@@ -104,6 +104,8 @@
     margin: 16px 0;
     color: white;
     font-weight: bold;
+    text-align: center;
+
   }
   p {
     max-width: 250px;
@@ -115,18 +117,24 @@
 // Convidados
 
 #convidados {
-  background-image: url('banner_hero.png');
+  background-image: url('convidados.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   justify-content: space-around;
   padding: 85px 40px;
+
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: white;
+  }
 }
 
 .img-convidados {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   background-image: url('convidado1.png');
 }
 
@@ -176,20 +184,18 @@
 // Inscricao
 
 #inscricao {
-  background-image: url('inscreva');
+  background-image: url('inscreva.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 85px 40px;
-
   h2 {
     margin: 0 0 85px 0;
     font-family: Museo Sans;
     font-size: 34px;
     color: #5c5963;
   }
-
   p{
     display: flex;
     align-items: left;
@@ -251,7 +257,6 @@
   padding: 50px 0px;
   background-image: url('parceiros.png');
   background-size: cover;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 85px 40px;
