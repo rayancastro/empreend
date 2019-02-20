@@ -1,0 +1,344 @@
+.container-fluid {
+  padding: 0;
+}
+
+.btn-evento {
+  padding: 8px 16px;
+  background-color: #a3c123 !important;
+  margin-left: 40px;
+  color: white;
+
+  &:hover {
+    color: lighten(white, 10%);
+  }
+
+}
+
+.big {
+  padding: 16px 32px !important;
+  font-size: 26px;
+  text-align: center;
+  max-width: 240px;
+  font-weight: bold;
+}
+
+// Banner
+
+.event-main-banner {
+	height: 600px;
+	background-image: url('banner_hero.png');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+	padding: 40px 0px 0px 120px;
+
+	h3 {
+    margin-top: 30px;
+    padding-left: 60px;
+		max-width: 400px;
+	}
+
+  a {
+    margin-top: 30px;
+    margin-left: 60px;
+  }
+}
+
+.event-banner-content {
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+
+.event-banner-button {
+  display: flex;
+  flex-stretch: 0;
+  font-family: Museo Sans;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #a3c123;
+  padding: 20px;
+  font-weight: 900;
+
+  &:hover {
+    color: rgb(240, 240, 240);
+  }
+
+}
+
+// Evento
+
+#evento {
+  display: flex;
+  padding: 85px 0px;
+  justify-content: flex-start;
+
+}
+
+.evento-imagem {
+  align-self: top;
+  margin: 0px 0px;
+}
+
+.evento-content {
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 62px;
+  font-family: Mukta;
+  font-size: 22px;
+  color: #5c5963;
+}
+
+
+.ong-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+
+.ong-logo {
+  max-width: 250px;
+  max-height: 250px;
+  justify-self: flex-end;
+  margin: 40px;
+}
+// Foco
+
+#foco {
+  background-color: #5c5963;
+  padding: 85px 40px;
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #ffffff;
+  }
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 24px 0;
+  h4 {
+    margin: 16px 0;
+    color: white;
+    font-weight: bold;
+  }
+  p {
+    max-width: 250px;
+    color: white;
+    text-align: center;
+  }
+}
+
+// Convidados
+
+#convidados {
+  background-image: url('teste_hero_fundo.png');
+  background-size: cover;
+  background-position: center center;
+  padding: 85px 40px;
+  text-align: center;
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
+.img-convidados {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-image: url('convidado 1.png');
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    .img-content {
+      visibility: visible !important;
+    }
+  }
+}
+
+.img-content {
+  background-color: rgba(50, 50, 50, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 130;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+
+  p {
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 24px;
+  }
+}
+
+
+// Cronograma
+
+#cronograma{
+    width: 100%;
+    min-height: 320px;
+    background-color: #cce65d;
+    padding: 85px 40px;
+
+    h2 {
+      margin: 0 0 85px 0;
+      font-family: Museo Sans;
+      font-size: 34px;
+      color: #5c5963;
+    }
+
+    p{
+      display: flex;
+      align-items: left;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 10px 30px;
+      font-family: Mukta;
+      font-size: 18px;
+      color: #5c5963;
+    }
+}
+
+// Inscricao
+
+#inscricao {
+  background-image: url('inscreva');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 85px 40px;
+
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #5c5963;
+  }
+
+  p{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 62px;
+    font-family: Mukta;
+    font-size: 18px;
+    color: #5c5963;
+  }
+}
+
+.botao-inscricao{
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+// Local
+
+#local {
+  background-color: #5c5963;
+  padding: 85px 40px;
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #ffffff;
+  }
+  p {
+    font-family: Museo Sans;
+    color: white;
+    text-align: right;
+  }
+}
+
+.local-imagem{
+  align-self: left;
+
+}
+
+@media (max-width: 768px) {
+  #local {
+    p {
+      text-align: center;
+    }
+  }
+
+  .local-imagem{
+    align-self: center;
+  }
+}
+
+// Parceiros
+
+#parceiros {
+  display: flex;
+  padding: 50px 0px;
+  background-image: url('parceiros.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 85px 40px;
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #5c5963;
+  }
+}
+
+.img-parceiros {
+  width: 250px;
+  height: 150px;
+  background-image: url('#');
+}
+
+
+//  MOBILE
+
+@media (max-width: 900px) {
+  .event-main-banner {
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    h3 {
+      margin-top: 30px;
+      padding-left: 0px;
+      max-width: auto;
+      text-align: center;
+    }
+
+    a {
+      text-align: center;
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+  }
+
+  #evento {
+    flex-direction: column;
+    min-width: 350px;
+  }
+
+  .evento-imagem {
+    align-self: center;
+    margin: 20px 0;
+  }
+}

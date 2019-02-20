@@ -1,0 +1,13 @@
+const offsetAnchor = () => {
+	// The function actually applying the offset
+	// window.scrollTo(window.scrollX, window.scrollY - 70);
+	// console.log('hello anchor');
+};
+
+
+const navlinks = document.getElementsByClassName('nav-link')
+
+for (var i = 0; i < navlinks.length; i++) {
+	var navlink = navlinks[i];
+	navlink.addEventListener('click', offsetAnchor);
+}

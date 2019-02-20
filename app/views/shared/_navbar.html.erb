@@ -3,21 +3,25 @@
     <%= link_to root_path, class: "nav-item-logo" do %>
       <%= image_tag 'Empreende1@2x.png', class: "logo" %>
     <% end %>
-  </div>
-</div>
-    <div class="nav-items d-none ">
+    <div class="nav-items d-none d-lg-flex">
       <div class="nav-item-left">
       </div>
       <div class="nav-item-right">
+        <!-- Evento, Foco, Convidados, Cronograma, Local -->
+        <%= link_to "Evento", meetup_path(anchor: 'evento'), class: "navbar-links" %>
+        <%= link_to "Foco", meetup_path(anchor: 'foco'), class: "navbar-links" %>
+        <%= link_to "Convidados", meetup_path(anchor: 'convidados'), class: "navbar-links" %>
+        <%= link_to "Cronograma", meetup_path(anchor: 'cronograma'), class: "navbar-links" %>
+        <%= link_to "Local", meetup_path(anchor: 'local'), class: "navbar-links" %>
+        <%= link_to "Blog", blog_path, class: "navbar-links" %>
+        <%= link_to "Fazer inscrição", "https://www.sympla.com.br/empreendata--talk-class__461103", class: "navbar-links btn-evento" %>
         <% if user_signed_in? %>
-          <%= link_to "PAINEL ADMIN", admin_path, class: "nav-link" if current_user.admin? %>
-          <%= link_to "LOGOUT", destroy_user_session_path, class: "nav-link", method: :delete %>
-        <% else %>
-          <%= link_to t(".sign_in", default: "LOGIN"), new_user_session_path, class: "nav-link" %>
-          <%= link_to t(".sign_in", default: "CRIAR CONTA"), new_user_registration_path, class: "nav-link" %>
+          <%= link_to "PAINEL ADMIN", admin_path, class: "navbar-links" if current_user.admin? %>
+          <%= link_to "LOGOUT", destroy_user_session_path, class: "navbar-links", method: :delete %>
         <% end %>
       </div>
     </div>
+
 
     <!-- Mobile dropdown list -->
     <div class="nav-mobile d-none">

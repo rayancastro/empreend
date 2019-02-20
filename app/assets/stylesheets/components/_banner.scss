@@ -110,9 +110,7 @@
   }
 
   a:hover {
-    color: gray;
     text-decoration: none;
-    background-color: lighten($emp-blue, 3%);
   }
 
 @media (max-width: 600px) {
