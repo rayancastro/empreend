@@ -2,6 +2,18 @@
   padding: 0;
 }
 
+.btn-evento {
+  padding: 8px 16px;
+  background-color: #a3c123 !important;
+  margin-left: 40px;
+  color: white;
+
+  &:hover {
+    color: lighten(white, 10%);
+  }
+
+}
+
 // Banner
 
 .event-main-banner {
@@ -15,7 +27,8 @@
 	padding: 40px 0px 0px 120px;
 
 	h3 {
-		max-width: 300px;
+    padding-left: 60px;
+		max-width: 400px;
 	}
 }
 
@@ -28,15 +41,14 @@
 
 
 .event-banner-button {
-  display: block;
+  display: flex;
+  flex-stretch: 0;
   font-family: Museo Sans;
   font-size: 24px;
   color: #ffffff;
   background-color: #a3c123;
-  padding: 20px 20px;
+  padding: 20px;
   font-weight: 900;
-  width: 227px;
-  height: 65px;
 
   &:hover {
     color: rgb(240, 240, 240);
@@ -48,8 +60,9 @@
 
 #evento {
   display: flex;
-  padding: 50px 0px;
+  padding: 85px 0px;
   justify-content: flex-start;
+
 }
 
 .evento-imagem {

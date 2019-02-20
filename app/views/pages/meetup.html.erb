@@ -180,3 +180,12 @@
 </div>
 
 </div>
+
+<!-- Javascript -->
+
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    <%= render(:partial => 'anchor', :handlers => [:erb], :formats => [:js]) %>
+  <% end %>
+<% end %>
