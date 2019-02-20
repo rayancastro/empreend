@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
-  root to: 'pages#home'
+  root to: 'pages#meetup'
 
   # AUTHENTICATION
 
@@ -19,7 +19,7 @@ Rails.application.routes.draw do
   get "/blog/:display_url", to: "posts#show", as: :post
   patch "/blog/:id", to: "posts#update"
   resources :posts, except: [:index, :show]
-  get "/blog", to: "posts#index"
+  get "/blog", to: "pages#home"
 
 
   # LEADS

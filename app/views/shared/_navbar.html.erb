@@ -13,6 +13,7 @@
         <%= link_to "Convidados", meetup_path(anchor: 'convidados'), class: "navbar-links" %>
         <%= link_to "Cronograma", meetup_path(anchor: 'cronograma'), class: "navbar-links" %>
         <%= link_to "Local", meetup_path(anchor: 'local'), class: "navbar-links" %>
+        <%= link_to "Blog", blog_path, class: "navbar-links" %>
         <%= link_to "Fazer inscrição", "https://www.sympla.com.br/empreendata--talk-class__461103", class: "navbar-links btn-evento" %>
         <% if user_signed_in? %>
           <%= link_to "PAINEL ADMIN", admin_path, class: "navbar-links" if current_user.admin? %>
