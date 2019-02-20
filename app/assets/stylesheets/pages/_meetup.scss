@@ -26,7 +26,7 @@
 
 .event-main-banner {
 	height: 600px;
-	background-image: url('banner_hero.png');
+	background-image: image-url('banner_hero.png');
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -107,7 +107,7 @@
   max-width: 250px;
   max-height: 250px;
   justify-self: flex-end;
-  margin: 40px;
+  padding: 20px;
 }
 // Foco
 
