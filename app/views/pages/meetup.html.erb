@@ -15,9 +15,11 @@
 		<%= image_tag 'o_evento.png', class: 'evento-imagem' %>
 		<div class="evento-content">
 			<h2>O evento</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur impedit ducimus, quia corporis quo enim blanditiis, quis mollitia tenetur neque obcaecati culpa unde omnis ullam praesentium dolorum expedita aut numquam.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur impedit ducimus, quia corporis quo enim
+				blanditiis, quis mollitia tenetur neque obcaecati culpa unde omnis ullam praesentium dolorum expedita aut numquam.</p>
 			<div class="ong-text">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, alias, laudantium! Facere perspiciatis atque beatae. </p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, alias, laudantium! Facere perspiciatis atque
+					beatae. </p>
 				<%= image_tag 'teto.png', class: 'ong-logo'%>
 			</div>
 		</div>
@@ -32,7 +34,8 @@
 				<div class="features">
 					<%= image_tag 'empreendedores.png' %>
 					<h4>Empreendedores</h4>
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque minus nam, odio. Quas laboriosoluptatem assumenda. </p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque minus nam, odio. Quas laboriosoluptatem
+						assumenda. </p>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
@@ -46,14 +49,16 @@
 				<div class="features">
 					<%= image_tag 'quer_empreender.png' %>
 					<h4>Quem quer empreender</h4>
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus atque beatae quisquam distinctrerum laboriosam. </p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus atque beatae quisquam distinctrerum
+						laboriosam. </p>
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="features">
 					<%= image_tag 'networking.png' %>
 					<h4>Quem busca networking</h4>
-					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, sit. Odit fugiat sapiente atque naibus ducimus temporibus. </p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, sit. Odit fugiat sapiente atque naibus
+						ducimus temporibus. </p>
 				</div>
 			</div>
 		</div>
@@ -90,46 +95,88 @@
 	<!-- Cronograma -->
 
 	<div id="cronograma">
-		<h2>Cronograma</h2>
-
+		<h2 class="text-center">Cronograma</h2>
+		<div class="row">
 		<div class="col-12 col-sm-6 col-md-3">
-			<p>Boas-vindas - 18h30</p>
+			<p>19h :: recepção & credenciamento</p>
 		</div>
 		<div class="col-12 col-sm-6 col-md-3">
-			<p>Bate-papo - 19h30</p>
+			<p>19h30 :: talks</p>
 		</div>
 		<div class="col-12 col-sm-6 col-md-3">
-			<p>Happy Hour - 21h30</p>
+			<p>21h30 :: networking moment</p>
 		</div>
 		<div class="col-12 col-sm-6 col-md-3">
-			<p>Encerramento - 22h30</p>
+			<p>22h :: final do evento</p>
+		</div>
 		</div>
 	</div>
-	
+
 	<!-- Faça sua inscrição! -->
 
 	<div id="inscricao">
-		<h2>Faça sua inscrição</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam recusandae, fugit ea reprehenderit officia exercitationem. Ut suscipit, est quasi consequatur voluptatibus, tempore ipsa aut debitis molestiae iusto dolore quisquam, ducimus.</p>
-		<h4></h4>
-		<a href="" class="banner-button">Fazer inscrição</a>
-
+		<h2 class="text-center">Faça sua inscrição</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam recusandae, fugit ea reprehenderit officia
+			exercitationem. Ut suscipit, est quasi consequatur voluptatibus, tempore ipsa aut debitis molestiae iusto dolore
+			quisquam, ducimus.</p>
+		<div class="botao-inscricao">
+		<%= link_to "Fazer inscrição", root_path, class: 'event-banner-button' %>
+		</div>
 	</div>
 
 	<!-- Local -->
 
 	<div id="local">
-		<h2>Local do evento</h2>
-		<div class="map-box">
-			<p>Rua bla</p>
-			<img src="" alt="Mapa">	
+		<h2 class="text-center">Local do evento</h2>
+		<div class="row">
+			<div class="col-md-5 col-12">
+			
+				<p>Le Wagon São Paulo Coding Bootcamp<br>
+					R. Mourato Coelho, 1404 - 21<br>
+					Vila Madalena, São Paulo - SP</p><br>
+
+				<p>Contato para suporte<br>
+					suporte@suporte.com.br</p>
+				</div>
+		
+			<div class="col-md-7 col-12 local-imagem">
+				<%= image_tag 'mapa.png' %>
+			</div>
 		</div>
 	</div>
+</div>
 
-	<!-- Parceiros -->
+<!-- Parceiros -->
 
-	<div id="parceiros">
-		<h2>Parceiros</h2>
+<div id="parceiros">
+	<h2 class="text-center">Parceiros</h2>
+	<div class="row">
+		<div class="col-12 col-sm-6 col-md-2">
+			<div class="img-parceiros">
+				<div class="img-content"></div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-2">
+			<div class="img-parceiros">
+				<div class="img-content"></div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-2">
+			<div class="img-parceiros">
+				<div class="img-content"></div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-2">
+			<div class="img-parceiros">
+				<div class="img-content"></div>
+			</div>
+		</div>
+		<div class="col-12 col-sm-6 col-md-2">
+			<div class="img-parceiros"></div>
+			<div class="img-content"></div>
+		</div>
 	</div>
+</div>
+</div>
 
 </div>

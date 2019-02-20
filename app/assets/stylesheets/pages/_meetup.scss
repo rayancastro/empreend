@@ -35,6 +35,8 @@
   background-color: #a3c123;
   padding: 20px 20px;
   font-weight: 900;
+  width: 227px;
+  height: 65px;
 
   &:hover {
     color: rgb(240, 240, 240);
@@ -142,4 +144,127 @@
     align-self: center;
     margin: 20px 0;
   }
+}
+
+// Cronograma
+
+#cronograma{
+    width: 100%;
+    min-height: 320px;
+    background-color: #cce65d;
+    padding: 85px 40px;
+
+    h2 {
+      margin: 0 0 85px 0;
+      font-family: Museo Sans;
+      font-size: 34px;
+      color: #5c5963;
+    }
+
+    p{
+      display: flex;
+      align-items: left;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 10px 30px;
+      font-family: Mukta;
+      font-size: 18px;
+      color: #5c5963;
+    }
+}
+
+// Inscricao
+
+#inscricao {
+  background-image: url('inscreva');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 85px 40px;
+
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #5c5963;
+  }
+
+  p{
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0 62px;
+    font-family: Mukta;
+    font-size: 18px;
+    color: #5c5963;
+  }
+}
+
+.botao-inscricao{
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+// Local
+
+#local {
+  background-color: #5c5963;
+  padding: 85px 40px;
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #ffffff;
+  }
+  p {
+    font-family: Museo Sans;
+    color: white;
+    text-align: right;
+  }
+}
+
+.local-imagem{
+  align-self: left;
+
+}
+
+@media (max-width: 768px) {
+  #local {
+    p {
+      text-align: center;
+    }
+  }
+
+  .local-imagem{
+    align-self: center;
+  }
+}
+
+// Parceiros
+
+#parceiros {
+  display: flex;
+  padding: 50px 0px;
+  background-image: url('parceiros.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 85px 40px;
+  h2 {
+    margin: 0 0 85px 0;
+    font-family: Museo Sans;
+    font-size: 34px;
+    color: #5c5963;
+  }
+}
+
+.img-parceiros {
+  width: 250px;
+  height: 150px;
+  background-image: url('#');
 }
