@@ -4,8 +4,8 @@
 	<div class="event-main-banner">
 		<div class="event-banner-content">
 			<%= image_tag 'logo_evento_cinza.png' %>
-			<h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-			<%= link_to "Fazer inscrição", root_path, class: 'event-banner-button' %>
+			<h3>Inteligencia de mercado e big data.</h3>
+			<%= link_to "Fazer inscrição", "https://www.sympla.com.br/empreendata--talk-class__461103", class: 'btn-evento big' %>
 		</div>
 	</div>
 
@@ -16,10 +16,10 @@
 		<div class="evento-content">
 			<h2>O evento</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur impedit ducimus, quia corporis quo enim
-				blanditiis, quis mollitia tenetur neque obcaecati culpa unde omnis ullam praesentium dolorum expedita aut numquam.</p>
+				blanditiis, quis mollitia tenetur neque obcaecati culpa unde omnis ullam praesentium dolorum expedita aut numquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium unde deleniti earum, repellendus aperiam sunt nobis. Aut quod odio, nisi culpa, consectetur eaque dolorum ducimus. Eos quasi sequi sed, odio.</p>
 			<div class="ong-text">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, alias, laudantium! Facere perspiciatis atque
-					beatae. </p>
+					beatae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quod similique saepe maiores deserunt. Officia adipisci praesentium dolores beatae corporis, culpa sit illum laboriosam neque dolorem, doloremque voluptatem, quis itaque. </p>
 				<%= image_tag 'teto.png', class: 'ong-logo'%>
 			</div>
 		</div>
@@ -67,30 +67,62 @@
 	<!-- Convidados especiais -->
 
 	<div id="convidados">
+<<<<<<< HEAD
 		<h2 class="text-center">Convidados especiais</h2>
 		<div class="row">
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="img-convidados">
 						<%= image_tag 'convidado1.png' %>
 					<div class="img-content"></div>
+=======
+		<h2>Convidados especiais</h2>
+		<div class="row">
+			<div class="col-12 col-sm-6 col-md-3">
+				<div class="img-convidados">
+					<div class="img-content">
+						<p>Elon Musk</p>
+						<p>CEO</p>
+					</div>
+>>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="img-convidados">
+<<<<<<< HEAD
 						<%= image_tag 'convidado2.png' %>
 					<div class="img-content"></div>
+=======
+					<div class="img-content">
+						<p>Elon Musk</p>
+						<p>CEO</p>
+					</div>
+>>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="img-convidados">
+<<<<<<< HEAD
 						<%= image_tag 'convidado3.png' %>
 					<div class="img-content"></div>
+=======
+					<div class="img-content">
+						<p>Elon Musk</p>
+						<p>CEO</p>
+					</div>
+>>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
 				</div>
 			</div>
 			<div class="col-12 col-sm-6 col-md-3">
 				<div class="img-convidados">
+<<<<<<< HEAD
 						<%= image_tag 'convidado4.png' %>
 					<div class="img-content"></div>
+=======
+					<div class="img-content">
+						<p>Elon Musk</p>
+						<p>CEO</p>
+					</div>
+>>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
 				</div>
 			</div>
 		</div>
@@ -184,3 +216,12 @@
 </div>
 
 </div>
+
+<!-- Javascript -->
+
+
+<% content_for(:after_js) do %>
+  <%= javascript_tag do %>
+    <%= render(:partial => 'anchor', :handlers => [:erb], :formats => [:js]) %>
+  <% end %>
+<% end %>

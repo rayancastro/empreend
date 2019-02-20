@@ -2,6 +2,26 @@
   padding: 0;
 }
 
+.btn-evento {
+  padding: 8px 16px;
+  background-color: #a3c123 !important;
+  margin-left: 40px;
+  color: white;
+
+  &:hover {
+    color: lighten(white, 10%);
+  }
+
+}
+
+.big {
+  padding: 16px 32px !important;
+  font-size: 26px;
+  text-align: center;
+  max-width: 240px;
+  font-weight: bold;
+}
+
 // Banner
 
 .event-main-banner {
@@ -15,8 +35,15 @@
 	padding: 40px 0px 0px 120px;
 
 	h3 {
-		max-width: 300px;
+    margin-top: 30px;
+    padding-left: 60px;
+		max-width: 400px;
 	}
+
+  a {
+    margin-top: 30px;
+    margin-left: 60px;
+  }
 }
 
 .event-banner-content {
@@ -28,15 +55,14 @@
 
 
 .event-banner-button {
-  display: block;
+  display: flex;
+  flex-stretch: 0;
   font-family: Museo Sans;
   font-size: 24px;
   color: #ffffff;
   background-color: #a3c123;
-  padding: 20px 20px;
+  padding: 20px;
   font-weight: 900;
-  width: 227px;
-  height: 65px;
 
   &:hover {
     color: rgb(240, 240, 240);
@@ -48,13 +74,14 @@
 
 #evento {
   display: flex;
-  padding: 50px 0px;
+  padding: 85px 0px;
   justify-content: flex-start;
+
 }
 
 .evento-imagem {
-  align-self: center;
-  margin: 0px 0;
+  align-self: top;
+  margin: 0px 0px;
 }
 
 .evento-content {
@@ -64,7 +91,7 @@
   flex-direction: column;
   margin: 0 62px;
   font-family: Mukta;
-  font-size: 18px;
+  font-size: 22px;
   color: #5c5963;
 }
 
@@ -77,8 +104,8 @@
 }
 
 .ong-logo {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 250px;
+  max-height: 250px;
   justify-self: flex-end;
   margin: 40px;
 }
@@ -100,6 +127,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  margin: 24px 0;
   h4 {
     margin: 16px 0;
     color: white;
@@ -117,6 +145,7 @@
 // Convidados
 
 #convidados {
+<<<<<<< HEAD
   background-image: url('convidados.png');
   background-size: cover;
   display: flex;
@@ -129,30 +158,57 @@
     font-family: Museo Sans;
     font-size: 34px;
     color: white;
+=======
+  background-image: url('teste_hero_fundo.png');
+  background-size: cover;
+  background-position: center center;
+  padding: 85px 40px;
+  text-align: center;
+  h2 {
+    margin-bottom: 60px;
+>>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
   }
 }
 
 .img-convidados {
+<<<<<<< HEAD
   width: 200px;
   height: 200px;
   background-image: url('convidado1.png');
+=======
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  background-image: url('convidado 1.png');
+  background-size: cover;
+  background-position: center;
+  &:hover {
+    .img-content {
+      visibility: visible !important;
+    }
+  }
+>>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
 }
 
 .img-content {
-  background-color: rgba(50, 50, 50, 0.3);
+  background-color: rgba(50, 50, 50, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 130;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  visibility: hidden;
+
+  p {
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 24px;
+  }
 }
 
-@media (max-width: 900px) {
-  #evento {
-    flex-direction: column;
-    min-width: 350px;
-  }
-
-  .evento-imagem {
-    align-self: center;
-    margin: 20px 0;
-  }
-}
 
 // Cronograma
 
@@ -272,4 +328,37 @@
   width: 250px;
   height: 150px;
   background-image: url('#');
+}
+
+
+//  MOBILE
+
+@media (max-width: 900px) {
+  .event-main-banner {
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    h3 {
+      margin-top: 30px;
+      padding-left: 0px;
+      max-width: auto;
+      text-align: center;
+    }
+
+    a {
+      text-align: center;
+      margin-top: 30px;
+      margin-left: 0px;
+    }
+  }
+
+  #evento {
+    flex-direction: column;
+    min-width: 350px;
+  }
+
+  .evento-imagem {
+    align-self: center;
+    margin: 20px 0;
+  }
 }
