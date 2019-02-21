@@ -132,6 +132,7 @@
     margin: 16px 0;
     color: white;
     font-weight: bold;
+    text-align: center;
   }
   p {
     max-width: 250px;
@@ -241,6 +242,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 85px 0;
+  text-align: center;
 
   h2 {
     margin: 0 0 40px 0;
@@ -323,6 +325,7 @@
   max-width: 250px;
   max-height: 250px;
   text-align: center;
+  margin: 30px;
 }
 
 .wagon {
@@ -332,10 +335,29 @@
 //  MOBILE
 
 @media (max-width: 900px) {
+
+  #evento {
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  .evento-content {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .btn-evento {
+    margin: 20px auto !important;
+  }
+
+  .wagon {
+    margin-top: 30px;
+  }
   .event-main-banner {
     align-items: center;
     justify-content: center;
     padding: 50px;
+    text-align: center;
     h3 {
       margin-top: 30px;
       padding-left: 0px;

@@ -63,13 +63,20 @@
 }
 
 @font-face {
-  font-family: 'Roboto';
-  src: font-url('ROBOTO-BLACK.TTF') format('truetype');
-  font-weight: black;
+  font-family: 'Mukta Vaani';
+  src: font-url('Mukta-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans';
+  src: font-url('MuseoSans-700.otf') format('opentype');
+  font-weight: bold;
   font-style: normal;
 }
 
 
 
 $body-font: 'Mukta Vaani', 'sans-serif';
-$headers-font: 'Mukta Vaani', 'sans-serif';
+$headers-font: 'Museo Sans', 'sans-serif';
