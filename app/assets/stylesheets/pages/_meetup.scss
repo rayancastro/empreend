@@ -76,7 +76,12 @@
   display: flex;
   padding: 85px 0px;
   justify-content: flex-start;
-
+  p {
+    color: #5c5963;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 18px;
+  }
 }
 
 .evento-imagem {
@@ -145,20 +150,6 @@
 // Convidados
 
 #convidados {
-<<<<<<< HEAD
-  background-image: url('convidados.png');
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 85px 40px;
-
-  h2 {
-    margin: 0 0 85px 0;
-    font-family: Museo Sans;
-    font-size: 34px;
-    color: white;
-=======
   background-image: url('teste_hero_fundo.png');
   background-size: cover;
   background-position: center center;
@@ -166,16 +157,10 @@
   text-align: center;
   h2 {
     margin-bottom: 60px;
->>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
   }
 }
 
 .img-convidados {
-<<<<<<< HEAD
-  width: 200px;
-  height: 200px;
-  background-image: url('convidado1.png');
-=======
   margin: auto;
   width: 200px;
   height: 200px;
@@ -187,7 +172,6 @@
       visibility: visible !important;
     }
   }
->>>>>>> 26264a0c33c003ab0ef1405e3a01548c6c89e9e3
 }
 
 .img-content {
@@ -327,7 +311,9 @@
 .img-parceiros {
   width: 250px;
   height: 150px;
-  background-image: url('#');
+  padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 
