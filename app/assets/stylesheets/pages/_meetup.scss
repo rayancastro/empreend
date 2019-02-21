@@ -302,6 +302,7 @@
 @media (max-width: 768px) {
   #local {
     p {
+      font-size: 24px;
       text-align: center;
     }
   }
@@ -331,11 +332,14 @@
 }
 
 .img-parceiros {
-  width: 250px;
-  height: 150px;
-  background-image: url('#');
+  max-width: 250px;
+  max-height: 250px;
+  text-align: center;
 }
 
+.wagon {
+  margin-top: -26px;
+}
 
 //  MOBILE
 
