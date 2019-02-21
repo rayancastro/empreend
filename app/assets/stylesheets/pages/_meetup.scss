@@ -143,7 +143,7 @@
 // Convidados
 
 #convidados {
-  background-image: url('teste_hero_fundo.png');
+  background-image: image-url('teste_hero_fundo.png');
   background-size: cover;
   background-position: center center;
   padding: 85px 40px;
@@ -157,7 +157,6 @@
   margin: auto;
   width: 200px;
   height: 200px;
-  background-image: url('convidado 1.png');
   background-size: cover;
   background-position: center;
   &:hover {
@@ -177,13 +176,31 @@
   flex-direction: column;
   justify-content: center;
   visibility: hidden;
+  padding: 16px;
 
   p {
     color: white;
     text-align: center;
     margin: 10px auto;
-    font-size: 24px;
+    font-size: 18px;
   }
+}
+
+#michelle {
+  background-image: image-url('michelle.png');
+}
+
+#fabio {
+  background-image: image-url('fabio.png');
+}
+
+#daniel {
+  background-image: image-url('daniel.png');
+
+}
+
+#gabrielle {
+  background-image: image-url('gabrielle.png');
 }
 
 
@@ -209,7 +226,7 @@
       flex-direction: column;
       margin: 10px 30px;
       font-family: Mukta;
-      font-size: 18px;
+      font-size: 24px;
       color: #5c5963;
     }
 }
@@ -217,15 +234,16 @@
 // Inscricao
 
 #inscricao {
-  background-image: url('inscreva');
+  background-image: image-url('inscreva');
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 85px 40px;
+  align-items: center;
+  padding: 85px 0;
 
   h2 {
-    margin: 0 0 85px 0;
+    margin: 0 0 40px 0;
     font-family: Museo Sans;
     font-size: 34px;
     color: #5c5963;
@@ -236,10 +254,14 @@
     align-items: left;
     justify-content: flex-start;
     flex-direction: column;
-    margin: 0 62px;
+    margin: 20px 62px;
     font-family: Mukta;
-    font-size: 18px;
+    font-size: 20px;
     color: #5c5963;
+  }
+
+  a {
+    margin: 0 !important;
   }
 }
 
@@ -290,7 +312,7 @@
 #parceiros {
   display: flex;
   padding: 50px 0px;
-  background-image: url('parceiros.png');
+  background-image: image-url('parceiros.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
