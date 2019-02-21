@@ -299,18 +299,6 @@
   margin: 40px;
 }
 
-@media (max-width: 768px) {
-  #local {
-    p {
-      font-size: 24px;
-      text-align: center;
-    }
-  }
-
-  .local-imagem{
-    align-self: center;
-  }
-}
 
 // Parceiros
 
@@ -370,5 +358,20 @@
   .evento-imagem {
     align-self: center;
     margin: 20px 0;
+  }
+
+  #local {
+    p {
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+
+  .local-imagem{
+    align-self: center;
+  }
+
+  .ong-text {
+    flex-direction: column;
   }
 }
